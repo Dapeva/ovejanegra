@@ -1,0 +1,29 @@
+/* 404 */
+.main404__contenedor {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: stretch;
+    div {
+        padding: 1rem;
+        max-width: 40%;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        a:link, a:visited, a:active {
+            text-decoration: none;
+            color:black;
+        }    
+        a:hover {
+            text-decoration: underline;
+            color:black;
+        }  
+        h1 {
+            margin-bottom: 1rem;
+        }
+        p {
+            padding: 0rem;
+            line-height: 1.5rem;
+        }        
+    }
+
+}

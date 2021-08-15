@@ -1,0 +1,27 @@
+/* Servicios */
+
+.mainservicios__contenedor {
+    @include flex(flex,row,center,wrap);
+    .mainservicios__service {
+        flex-basis: 30%;
+        text-align: center;
+        margin: 1.5rem;
+        margin-top: unset;
+        padding: 0.0rem;
+        border: .00rem solid;
+        // border-radius: .7rem;
+        // -moz-border-radius: .7rem;
+        // -webkit-border-radius: .7rem;
+        background-color: white;
+        .mainservicios__parrafo {
+            text-align: left;
+            font-size: $fontSize ;
+            padding: 0rem 1rem 1rem 1rem;
+            margin-top: 0.4rem;
+            line-height: 1.4rem
+        }
+        .mainservicios__imagen {
+            width: 100%
+        }    
+    }
+}

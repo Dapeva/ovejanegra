@@ -1,0 +1,36 @@
+/* Contacto */
+
+.maincontacto__titulo {
+  h1 {
+    margin-top: 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1.5rem;
+    padding-top:unset;
+    font-size: 1.1rem; 
+  }
+}
+
+.maincontacto__formulario {
+  padding-top: 1rem;
+
+  .btn-primary, .btn-primary:active, .btn-primary:visited {
+  @extend %botonPrimario;
+  }
+
+  .btn-primary:hover {
+  @extend %botonPrimarioHover
+  }
+
+  .col-md-12 {
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .maincontacto__mapa {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
+
