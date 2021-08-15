@@ -184,7 +184,6 @@ main {
     flex-basis: 30%;
     text-align: center;
     margin: 1.5rem;
-    margin-top: unset;
     padding: 0.0rem;
     border: .00rem solid;
     background-color: white; }
@@ -212,7 +211,6 @@ main {
     align-items: top;
     width: 50%;
     margin: 1rem;
-    margin-top: unset;
     background-color: white;
     align-items: stretch; }
     .mainnosotros__contenedor .mainnosotros__marco div {
@@ -232,7 +230,7 @@ main {
 
 /* Contacto */
 .maincontacto__titulo h1 {
-  margin-top: 0;
+  margin-top: 1rem;
   margin-left: 1rem;
   margin-right: 1rem;
   margin-bottom: 1.5rem;
@@ -261,7 +259,8 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
-  padding-bottom: 1rem; }
+  padding-bottom: 1rem;
+  padding-top: 1rem; }
   .mainblog__contenedor img {
     width: 18rem;
     height: 12rem; }
