@@ -80,11 +80,6 @@
 @media (min-width: 0px) and (max-width:700px ) {
 
   // Header
-
-.header__contenedor {
-  grid-template-columns: 1fr 1fr;
-}
-
   .header__menu {
      display: none;
   }
@@ -179,7 +174,7 @@
         flex-basis: 90%;
         text-align: center;
         p {
-        font-size: $fontSize * 0.9;
+        font-size: $fontSize * 0.9 !important;
         }
     }
   }

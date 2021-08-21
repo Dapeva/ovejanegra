@@ -62,8 +62,8 @@
         text-align: left;
         width: 9.8rem; }
   .header__contenedor .header__menuBurger {
-    margin-right: 3rem;
-    font-size: 0.9rem; }
+    margin-right: 3.2rem;
+    font-size: 1rem; }
     .header__contenedor .header__menuBurger ul {
       display: none;
       z-index: 6666 !important; }
@@ -377,8 +377,6 @@ main {
     grid-template-columns: 1fr 1fr; } }
 
 @media (min-width: 0px) and (max-width: 700px) {
-  .header__contenedor {
-    grid-template-columns: 1fr 1fr; }
   .header__menu {
     display: none; }
   .footer__contenedor {
@@ -441,7 +439,7 @@ main {
       flex-basis: 90%;
       text-align: center; }
       .mainservicios__contenedor .mainservicios__service p {
-        font-size: 0.9rem; }
+        font-size: 0.9rem !important; }
   .mainnosotros__contenedor .mainnosotros__marco {
     display: flex;
     flex-direction: column;
