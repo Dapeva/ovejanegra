@@ -70,8 +70,8 @@
   }
 
   .header__menuBurger {
-    margin-right: 3.2rem;
-    font-size: $fontSize;
+    margin-right: 3.6rem;
+    font-size: $fontSize * 1.1;
     ul{
      display: none;
      z-index: 6666 !important
