@@ -1,5 +1,18 @@
+@media (min-width: 911px) {
+
+  //Header
+  .header__menuBurger {
+      display: none
+    }
+  }
+
 @media (min-width: 701px) and (max-width:910px ) {
   
+  //Header
+  .header__menuBurger {
+    display: none
+  }
+
   // Index
   .maininicio__contenedor {
 
@@ -67,22 +80,13 @@
 @media (min-width: 0px) and (max-width:700px ) {
 
   // Header
-  .header__contenedor {
-    .header__derecha {
-      .header__menu {
-        ul {
-          li {
-          display: block;
-          font-size: $fontSize * 0.8;
-          }
-          ul {
-            li {
-            display: none;
-            }
-          }
-        }
-      }   
-    }    
+
+.header__contenedor {
+  grid-template-columns: 1fr 1fr;
+}
+
+  .header__menu {
+     display: none;
   }
 
   // Footer
@@ -172,10 +176,10 @@
   .mainservicios__contenedor {
     @include flex(flex,row,center,wrap);
     .mainservicios__service {
-        flex-basis: 70%;
+        flex-basis: 90%;
         text-align: center;
         p {
-        font-size: $fontSize * 0.85 
+        font-size: $fontSize * 0.9;
         }
     }
   }
@@ -185,7 +189,7 @@
     .mainnosotros__marco {
       display: flex;
       flex-direction: column;
-      width: 70%;
+      width: 90%;
       align-items: stretch;
       .mainnosotros__texto {
         p {

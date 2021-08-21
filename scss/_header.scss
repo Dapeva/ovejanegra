@@ -24,6 +24,7 @@
     grid-area: 1 / 2 / 2 / 5;
     text-align: right;
     align-self: center;
+    justify-self: end;
   }
   
   .header__menu {
@@ -66,5 +67,50 @@
         }
       }
     }
+  }
+
+  .header__menuBurger {
+    margin-right: 3rem;
+    font-size: 0.9 * $fontSize;
+    ul{
+     display: none;
+     z-index: 6666 !important
+    }
+    input:checked  ~ ul{
+     display:block;
+     position: absolute;
+    }
+    input {
+     display: none;
+    }
+    label {
+     color: white;
+     box-sizing: border-box;
+     display: inline-block;
+     border: 0px solid white;
+     border-radius: 5px;
+     width: 30px;
+     height: 30px;
+     line-height: 30px;
+     font-weight: bold;
+     font-size: 1.8rem;
+     user-select: none;
+   }
+   li {
+     display: block;
+     background: black;
+     margin: 0;
+     padding: 0.5rem;
+     list-style: none;
+    text-align: left;
+    a {
+      color:white;
+      text-decoration: none;
+      }
+    a:hover {
+      color: black;
+      background-color:rgb(233, 233, 233);
+    }
+   }
   }
 }

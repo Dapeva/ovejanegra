@@ -29,7 +29,8 @@
   .header__contenedor .header__derecha {
     grid-area: 1 / 2 / 2 / 5;
     text-align: right;
-    align-self: center; }
+    align-self: center;
+    justify-self: end; }
   .header__contenedor .header__menu ul {
     list-style-type: none;
     padding: 0rem;
@@ -60,6 +61,42 @@
         font-size: .85rem;
         text-align: left;
         width: 9.8rem; }
+  .header__contenedor .header__menuBurger {
+    margin-right: 3rem;
+    font-size: 0.9rem; }
+    .header__contenedor .header__menuBurger ul {
+      display: none;
+      z-index: 6666 !important; }
+    .header__contenedor .header__menuBurger input:checked ~ ul {
+      display: block;
+      position: absolute; }
+    .header__contenedor .header__menuBurger input {
+      display: none; }
+    .header__contenedor .header__menuBurger label {
+      color: white;
+      box-sizing: border-box;
+      display: inline-block;
+      border: 0px solid white;
+      border-radius: 5px;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      font-weight: bold;
+      font-size: 1.8rem;
+      user-select: none; }
+    .header__contenedor .header__menuBurger li {
+      display: block;
+      background: black;
+      margin: 0;
+      padding: 0.5rem;
+      list-style: none;
+      text-align: left; }
+      .header__contenedor .header__menuBurger li a {
+        color: white;
+        text-decoration: none; }
+      .header__contenedor .header__menuBurger li a:hover {
+        color: black;
+        background-color: #e9e9e9; }
 
 /* Footer */
 .footer__contenedor {
@@ -67,7 +104,7 @@
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   background-color: black;
   padding: 1rem;
-  font-size: 12.8px; }
+  font-size: 0.8rem; }
   .footer__contenedor p {
     color: #b4b4b4; }
   .footer__contenedor a:link, .footer__contenedor a:visited, .footer__contenedor a:active {
@@ -105,7 +142,7 @@
       grid-area: 2 / 1 / 3 / 2;
       align-self: flex-end; }
       .footer__contenedor .footer__derecha .footer__byMott .footer__byMott2 {
-        font-size: 9.6px; }
+        font-size: 0.6rem; }
 
 /* General */
 html {
@@ -152,18 +189,18 @@ main {
     padding: .5rem; }
     .maininicio__contenedor .maininicio__texto2 p {
       margin: 5%;
-      font-size: 24px;
+      font-size: 1.5rem;
       font-weight: bold;
       color: white; }
     .maininicio__contenedor .maininicio__texto2 .maininicio__fuente {
-      font-size: 16px; }
+      font-size: 1rem; }
   .maininicio__contenedor .maininicio__contacto {
     grid-area: 3 / 1 / 4 / 5;
     margin-top: 2rem;
     margin-bottom: 0rem; }
     .maininicio__contenedor .maininicio__contacto p {
       text-align: center;
-      font-size: 24px; }
+      font-size: 1.5rem; }
   .maininicio__contenedor .maininicio__contacto2 {
     grid-area: 4 / 1 / 5 / 5;
     margin-top: 0rem;
@@ -184,12 +221,12 @@ main {
     flex-basis: 30%;
     text-align: center;
     margin: 1.5rem;
-    padding: 0.0rem;
-    border: .00rem solid;
+    padding: 0rem;
+    border: 0rem solid;
     background-color: white; }
     .mainservicios__contenedor .mainservicios__service .mainservicios__parrafo {
       text-align: left;
-      font-size: 16px;
+      font-size: 1rem;
       padding: 0rem 1rem 1rem 1rem;
       margin-top: 0.4rem;
       line-height: 1.4rem; }
@@ -230,11 +267,10 @@ main {
 
 /* Contacto */
 .maincontacto__titulo h1 {
-  margin-top: 1rem;
+  padding-top: 1rem;
   margin-left: 1rem;
   margin-right: 1rem;
   margin-bottom: 1.5rem;
-  padding-top: unset;
   font-size: 1.1rem; }
 
 .maincontacto__formulario {
@@ -299,17 +335,23 @@ main {
       padding: 0rem;
       line-height: 1.5rem; }
 
+@media (min-width: 911px) {
+  .header__menuBurger {
+    display: none; } }
+
 @media (min-width: 701px) and (max-width: 910px) {
+  .header__menuBurger {
+    display: none; }
   .maininicio__contenedor .maininicio__texto1 {
     font-size: .8rem; }
   .maininicio__contenedor .maininicio__imagen1 {
     margin-top: .2rem; }
   .maininicio__contenedor .maininicio__texto2 p {
-    font-size: 19.2px; }
+    font-size: 1.2rem; }
   .maininicio__contenedor .maininicio__texto2 .maininicio__fuente {
-    font-size: 16px; }
+    font-size: 1rem; }
   .maininicio__contenedor .maininicio__contacto p {
-    font-size: 19.2px; }
+    font-size: 1.2rem; }
   .maininicio__contenedor .maininicio__contacto2 img {
     width: 9rem; }
   .mainservicios__contenedor {
@@ -329,16 +371,15 @@ main {
       margin-right: auto;
       margin-bottom: unset; }
     .mainnosotros__contenedor .mainnosotros__marco .mainnosotros__texto p {
-      font-size: 16px; }
+      font-size: 1rem; }
   .mainblog__contenedor {
     display: grid;
     grid-template-columns: 1fr 1fr; } }
 
 @media (min-width: 0px) and (max-width: 700px) {
-  .header__contenedor .header__derecha .header__menu ul li {
-    display: block;
-    font-size: 12.8px; }
-  .header__contenedor .header__derecha .header__menu ul ul li {
+  .header__contenedor {
+    grid-template-columns: 1fr 1fr; }
+  .header__menu {
     display: none; }
   .footer__contenedor {
     grid-template-columns: 1fr; }
@@ -363,28 +404,28 @@ main {
       .maininicio__contenedor .maininicio__texto1 h1 {
         padding: auto;
         margin-bottom: 1rem;
-        font-size: 22.4px; }
+        font-size: 1.4rem; }
       .maininicio__contenedor .maininicio__texto1 h2 {
         color: #636363;
         padding: auto;
         margin-bottom: 1rem;
-        font-size: 19.2px; }
+        font-size: 1.2rem; }
     .maininicio__contenedor .maininicio__imagen2 {
       grid-area: 3 / 1 / 4 / 2; }
     .maininicio__contenedor .maininicio__texto2 {
       grid-area: 3 / 1 / 4 / 2;
       padding: 1rem; }
       .maininicio__contenedor .maininicio__texto2 p {
-        font-size: 19.2px; }
+        font-size: 1.2rem; }
       .maininicio__contenedor .maininicio__texto2 .maininicio__fuente {
-        font-size: 14.4px; }
+        font-size: 0.9rem; }
     .maininicio__contenedor .maininicio__contacto {
       grid-area: 4 / 1 / 5 / 2;
       margin-top: 2rem;
       margin-bottom: 0rem;
       padding: .5rem; }
       .maininicio__contenedor .maininicio__contacto p {
-        font-size: 19.2px; }
+        font-size: 1.2rem; }
     .maininicio__contenedor .maininicio__contacto2 {
       grid-area: 5 / 1 / 6 / 2;
       margin-top: 0rem;
@@ -397,17 +438,17 @@ main {
     justify-content: center;
     flex-wrap: wrap; }
     .mainservicios__contenedor .mainservicios__service {
-      flex-basis: 70%;
+      flex-basis: 90%;
       text-align: center; }
       .mainservicios__contenedor .mainservicios__service p {
-        font-size: 13.6px; }
+        font-size: 0.9rem; }
   .mainnosotros__contenedor .mainnosotros__marco {
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 90%;
     align-items: stretch; }
     .mainnosotros__contenedor .mainnosotros__marco .mainnosotros__texto p {
-      font-size: 14.4px; }
+      font-size: 0.9rem; }
   .mainblog__contenedor {
     display: grid;
     grid-template-columns: 1fr; }
